@@ -1,3 +1,4 @@
+/// This is a documentation comment
 fn main() {
     // single line comment
     /*
