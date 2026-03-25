@@ -20,4 +20,16 @@ fn main() {
     // constant variable
     const V: u32 = 10;
     println!("V is {V}");
+
+    // shadowing
+    let a = 5;
+
+    let a = a + 1;
+
+    {
+        let a = a * 2;
+        println!("The value of a in the inner scope is: {a}");
+    }
+
+    println!("The value of a is: {a}");
 }
