@@ -16,5 +16,8 @@ fn main() {
 
     x = 20;
     println!("x is {x}");
-    
+
+    // constant variable
+    const V: u32 = 10;
+    println!("V is {V}");
 }
