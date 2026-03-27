@@ -61,5 +61,65 @@ fn main() {
     let arr: [i32; 3] = [1, 2, 3];
     println!("arr is {arr}");
     
-    
+    // functions
+    fn add(x: i32, y: i32) -> i32 {
+        x + y
+    }
+    println!("add(1, 2) is {}", add(1, 2));
+
+    // control flow
+    // if expression
+    let number = 6;
+    if number < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
+
+    // loop
+    let mut count = 0;
+    loop {
+        count += 1;
+        println!("count is {count}");
+        if count == 10 {
+            break;
+        }
+    }
+
+    // while loop
+    let mut count = 0;
+    while count < 10 {
+        count += 1;
+        println!("count is {count}");
+    }
+
+    // for loop
+    let arr = [1, 2, 3, 4, 5];
+    for element in arr {
+        println!("element is {element}");
+    }
+
+    // match expression
+    let number = 6;
+    match number {
+       1 => println!("one"),
+       2 => println!("two"),
+       3 => println!("three"),
+       4 => println!("four"),
+       5 => println!("five"),
+       _ => println!("other"),
+    }
+
+    // if let expression    
+    let some_u8_value = Some(0u8);
+    match some_u8_value {
+        Some(3) => println!("three"),
+        _ => (),
+    }
+
+    // if let expression with pattern
+    let some_u8_value = Some(0u8);
+    if let Some(3) = some_u8_value {
+        println!("three");
+    }
 }
