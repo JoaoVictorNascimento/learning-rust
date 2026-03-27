@@ -55,12 +55,12 @@ fn main() {
     // compound types
     // tuple types
     let tup: (i32, f64, bool, char) = (10, 10.0, true, 'a');
-    println!("tup is {tup}");
+    println!("tup is {tup:?}");
 
     // array types
     let arr: [i32; 3] = [1, 2, 3];
-    println!("arr is {arr}");
-    
+    println!("arr is {arr:?}");
+
     // functions
     fn add(x: i32, y: i32) -> i32 {
         x + y
