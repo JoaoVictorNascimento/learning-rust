@@ -32,4 +32,34 @@ fn main() {
     }
 
     println!("The value of a is: {a}");
+
+    // data types
+    // scalar types
+    // integer types
+    let x: i32 = 10;
+    println!("x is {x}");
+
+    // floating-point types
+    let y: f64 = 10.0;
+    println!("y is {y}");
+    
+    // boolean types
+    let z: bool = true;
+    println!("z is {z}");
+
+    // character types
+    let c: char = 'a';
+    println!("c is {c}");
+    
+    
+    // compound types
+    // tuple types
+    let tup: (i32, f64, bool, char) = (10, 10.0, true, 'a');
+    println!("tup is {tup}");
+
+    // array types
+    let arr: [i32; 3] = [1, 2, 3];
+    println!("arr is {arr}");
+    
+    
 }
